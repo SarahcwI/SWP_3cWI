@@ -18,7 +18,7 @@ public class While_Exercise_6 {
             }
 
             else {memory += randomNumber;}
-            System.out.println("uwu " + randomNumber);
+            System.out.println("To be added number: " + randomNumber);
             System.out.println(memory);
         }
     }
