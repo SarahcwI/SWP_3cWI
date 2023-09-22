@@ -9,7 +9,7 @@ public class If_Statement_Exercise_2 {
         int randomNumber1 = random.nextInt(100);
 
         Random random2 = new Random();
-        int randomNumber2 = random.nextInt(100);
+        int randomNumber2 = random2.nextInt(100);
 
         System.out.println(randomNumber1);
         System.out.println(randomNumber2);
