@@ -5,7 +5,7 @@ public class Switch_Statement_Exercise_3 {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int randomNumber = random.nextInt(5, 10);
+        int randomNumber = random.nextInt(5, 11);
 
         System.out.println(randomNumber);
 
