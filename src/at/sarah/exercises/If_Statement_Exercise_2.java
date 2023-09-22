@@ -21,7 +21,7 @@ public class If_Statement_Exercise_2 {
             System.out.println("Eine der beiden ist kleiner als 30");
         }
         if (randomNumber1 < 50 && randomNumber2 != 50){
-            System.out.println("Erste Zahl klein, zweite kein 50iger");
+            System.out.println("Erste Zahl klein, zweite kein 50-iger");
         }
     }
 }
