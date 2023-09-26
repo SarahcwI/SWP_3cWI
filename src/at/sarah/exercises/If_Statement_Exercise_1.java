@@ -2,7 +2,7 @@ package at.sarah.exercises;
 
 import java.util.Random;
 
-public class    If_Statement_Exercise_1 {
+public class If_Statement_Exercise_1 {
     public static void main(String[] args) {
 
         Random random = new Random();
@@ -10,15 +10,15 @@ public class    If_Statement_Exercise_1 {
 
         System.out.println(randomNumber);
 
-        if (randomNumber < 20){
+        if (randomNumber < 20) {
             System.out.println("Mini");
         }
 
-        if (randomNumber > 20 && randomNumber < 50){
+        if (randomNumber > 20 && randomNumber < 50) {
             System.out.println("Medium");
         }
 
-        if (randomNumber > 50){
+        if (randomNumber > 50) {
             System.out.println("Large");
         }
 
