@@ -4,39 +4,93 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Wuerfelspiel_Bsp_Exercise_8 {
+    static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         Random random = new Random();
-        Scanner scanner = new Scanner(System.in);
 
         boolean isGameOnAndStarted = false;
 
+        int pointCounterPlayer = 0;
+        int pointCounterComputer = 0;
+        int roundCounter;
+
         System.out.println("Bitte schreibe 'Start' um das Spiel zu beginnen");
         if (scanner.next().equalsIgnoreCase("Start")) {
-            System.out.println("You started the game");
             isGameOnAndStarted = true;
         }
 
 
-
         while (isGameOnAndStarted) {
-            for (int counter = 1; counter <= 2; counter++){
-                int randomNumber1 = random.nextInt(1,6);
-                if (counter == 1) {
-                    System.out.println("Player 1 rolled " + randomNumber1);
+            for (roundCounter = 1; roundCounter <= 6; roundCounter++) {
+                System.out.println("---------Round " + roundCounter + "---------");
+                int randomNumber1 = random.nextInt(1, 6);
+                int randomNumber2 = random.nextInt(1, 6);
+
+                System.out.println("You rolled: " + randomNumber1);
+                System.out.println("The Computer rolled: " + randomNumber2);
+                System.out.println("---------------------------");
+
+                if (randomNumber1 > randomNumber2) {
+                    System.out.println("You won Round " + roundCounter + "!");
+                    pointCounterPlayer++;
                 }
-                else {
-                    System.out.println("Player 2 rolled " + randomNumber1);
+                if (randomNumber1 < randomNumber2) {
+                    System.out.println("The Computer won Round " + roundCounter + "!");
+                    pointCounterComputer++;
+                }
+                if (randomNumber1 == randomNumber2) {
+                    System.out.println("It's a tie!");
                 }
 
-                if
-
+                if (roundCounter == 1) {
+                    scanner.nextLine();
+                    scanner.nextLine();
+                }
+                if (roundCounter <= 5 && roundCounter != 1) {
+                    scanner.nextLine();
+                }
+                if (roundCounter == 6) {
+                    System.out.println(" ");
+                }
 
             }
-           isGameOnAndStarted = false;
+
+            if (pointCounterPlayer > pointCounterComputer) {
+                int pointsLead = pointCounterPlayer - pointCounterComputer;
+                System.out.println("Congrats! You won with total amount of " + pointCounterPlayer +
+                        " points and a lead of " + pointsLead + " points!");
+            } else {
+                int pointsLead = pointCounterComputer - pointCounterPlayer;
+                System.out.println("The Computer won with a total amount of " + pointCounterComputer + " points and a lead of " + pointsLead + " points!");
+            }
+
+            boolean result = showFinishDialog();
+            if (!result){
+                roundCounter=0;
+            } else {
+                break;
+            }
 
         }
 
 
+    }
+
+    public static boolean showFinishDialog(){
+
+        while (true) {
+            System.out.println("If you wish to play again please type 'Abrakadabra' otherwise type 'Vanish'");
+            String codeWord = scanner.next();
+            if (codeWord.equalsIgnoreCase("Abrakadabra")) {
+               return false;
+            } else if (codeWord.equalsIgnoreCase("Vanish")) {
+                //System.out.println("wooooosh...");
+
+                return true;
+            } else {
+                System.out.println("invalid try again");
+            }
+        }
 
     }
 
