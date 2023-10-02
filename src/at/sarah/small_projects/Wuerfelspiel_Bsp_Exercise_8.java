@@ -24,7 +24,6 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
                 showRoundDialogs();
                 calculateWinnerOfRound();
                 pressEnterForNextRound();
-
             }
 
             showWinnerOfGame();
@@ -67,8 +66,10 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
         }
     }
 
-    public static void pressEnterForNextRound(){
+    public static void pressEnterForNextRound() {
         if (roundCounter == 1) {
+
+
             scanner.nextLine();
             scanner.nextLine();
         }
@@ -79,6 +80,7 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
             System.out.println(" ");
         }
     }
+
     public static void showWinnerOfGame() {
         if (pointCounterPlayer > pointCounterComputer) {
             int pointsLead = pointCounterPlayer - pointCounterComputer;
