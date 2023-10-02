@@ -7,7 +7,6 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
     static boolean isGameOnAndStarted = false;
-
     static int roundCounter;
     static int pointCounterPlayer = 0;
     static int pointCounterComputer = 0;
@@ -15,29 +14,16 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
     static int randomNumber2;
 
     public static void main(String[] args) {
-
-
         showMenu();
-
 
         while (isGameOnAndStarted) {
             for (roundCounter = 1; roundCounter <= 6; roundCounter++) {
                 randomNumber1 = random.nextInt(1, 6);
                 randomNumber2 = random.nextInt(1, 6);
 
-                showRoundDiaologs();
+                showRoundDialogs();
                 calculateWinnerOfRound();
-
-                if (roundCounter == 1) {
-                    scanner.nextLine();
-                    scanner.nextLine();
-                }
-                if (roundCounter <= 5 && roundCounter != 1) {
-                    scanner.nextLine();
-                }
-                if (roundCounter == 6) {
-                    System.out.println(" ");
-                }
+                pressEnterForNextRound();
 
             }
 
@@ -60,7 +46,7 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
         }
     }
 
-    public static void showRoundDiaologs() {
+    public static void showRoundDialogs() {
         System.out.println("---------Round " + roundCounter + "---------");
         System.out.println("You rolled: " + randomNumber1);
         System.out.println("The Computer rolled: " + randomNumber2);
@@ -81,6 +67,18 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
         }
     }
 
+    public static void pressEnterForNextRound(){
+        if (roundCounter == 1) {
+            scanner.nextLine();
+            scanner.nextLine();
+        }
+        if (roundCounter <= 5 && roundCounter != 1) {
+            scanner.nextLine();
+        }
+        if (roundCounter == 6) {
+            System.out.println(" ");
+        }
+    }
     public static void showWinnerOfGame() {
         if (pointCounterPlayer > pointCounterComputer) {
             int pointsLead = pointCounterPlayer - pointCounterComputer;
