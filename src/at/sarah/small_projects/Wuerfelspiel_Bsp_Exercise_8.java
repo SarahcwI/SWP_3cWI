@@ -5,20 +5,15 @@ import java.util.Scanner;
 
 public class Wuerfelspiel_Bsp_Exercise_8 {
     static Scanner scanner = new Scanner(System.in);
+    static boolean isGameOnAndStarted = false;
     public static void main(String[] args) {
         Random random = new Random();
-
-        boolean isGameOnAndStarted = false;
-
         int pointCounterPlayer = 0;
         int pointCounterComputer = 0;
         int roundCounter;
 
-        System.out.println("Bitte schreibe 'Start' um das Spiel zu beginnen");
-        if (scanner.next().equalsIgnoreCase("Start")) {
-            isGameOnAndStarted = true;
-        }
 
+        showMenu();
 
         while (isGameOnAndStarted) {
             for (roundCounter = 1; roundCounter <= 6; roundCounter++) {
@@ -76,6 +71,12 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
 
     }
 
+    public static void showMenu(){
+        System.out.println("Bitte schreibe 'Start' um das Spiel zu beginnen");
+        if (scanner.next().equalsIgnoreCase("Start")) {
+            isGameOnAndStarted = true;
+        }
+    }
     public static boolean showFinishDialog(){
 
         while (true) {
