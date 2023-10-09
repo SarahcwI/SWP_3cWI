@@ -69,7 +69,6 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
     public static void pressEnterForNextRound() {
         if (roundCounter == 1) {
 
-
             scanner.nextLine();
             scanner.nextLine();
         }
@@ -100,7 +99,7 @@ public class Wuerfelspiel_Bsp_Exercise_8 {
             if (codeWord.equalsIgnoreCase("Abrakadabra")) {
                 return false;
             } else if (codeWord.equalsIgnoreCase("Vanish")) {
-                //System.out.println("wooooosh...");
+                System.out.println("wooooosh...");
 
                 return true;
             } else {
