@@ -6,16 +6,6 @@ public class CeaserEncryption {
     public static void main(String[] args) {
         Random random = new Random();
 
-      String[] words = {"Ich", "brauche", "Hilfe", "Ohnein"};
-
-        for (int arrayFieldSelector = 0; arrayFieldSelector < words.length ; arrayFieldSelector++) {
-            int randomNumber = random.nextInt(0,words.length);
-            System.out.println(words[randomNumber]);
-        }
-
-
-
-
     }
 
 
