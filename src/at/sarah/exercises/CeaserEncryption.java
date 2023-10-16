@@ -1,14 +1,36 @@
 package at.sarah.exercises;
 
-import java.util.Random;
+import java.util.Scanner;
 
 public class CeaserEncryption {
     public static void main(String[] args) {
-        Random random = new Random();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Passwort eingeben");
+        String passwordReader = scanner.next();
+        System.out.println(passwordReader);
+
+
+        char[] convertToLetters = passwordReader.toCharArray();
+
+
+
+        for (char letter : toLetters){
+            System.out.print(letter + " ");
+        }
+        /*for (int letterCounter = 0; letterCounter < letters.length; letterCounter++) {
+            System.out.println(letters[letterCounter]);
+
+        }*/
 
     }
 
 
+    public static String encryption(String passwordInput){
+
+
+    }
 
 
 }
