@@ -4,8 +4,9 @@ package at.sarah.ExerciseCeaserEncryption;
 public class CeaserEncryption {
 
     public static void main(String[] args) {
-        int a = 5;
-        System.out.println(Encryption.encryption(a));
+        String passwordInput = "Help";
+        String result = Encryption.encryption(passwordInput);
+        System.out.println(result);
 
     }
 
