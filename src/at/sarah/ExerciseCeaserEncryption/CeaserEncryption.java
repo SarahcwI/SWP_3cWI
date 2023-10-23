@@ -1,19 +1,21 @@
 package at.sarah.ExerciseCeaserEncryption;
 
 
+import java.util.Scanner;
+
 public class CeaserEncryption {
 
     public static void main(String[] args) {
-        String passwordInput = "Help";
-        String result = Encryption.encryption(passwordInput);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bitte Passwort eingeben: ");
+        String passwordInput = scanner.next();
+        String encrypted = Encryption.encryption(passwordInput);
+        System.out.println(encrypted);
+        String decrypted = Decryption.decryption(encrypted);
+        System.out.println(decrypted);
+
 
     }
-
-
-
-
-
 }
 
 
