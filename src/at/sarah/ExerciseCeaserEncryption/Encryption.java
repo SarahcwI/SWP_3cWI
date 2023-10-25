@@ -7,8 +7,11 @@ public class Encryption {
 
         for (int adder = 0; adder < convertToLetters.length; adder++) {
             char Letters = convertToLetters[adder];
-            if (Letters == 122 || Letters == 90) {
-                Letters -= 26;
+            if (Letters == 121 || Letters == 89) {
+                Letters -= 24;
+            }
+           else if (Letters == 122 || Letters == 90) {
+                Letters -= 24;
             }
             else {Letters += 2;}
             output[adder] = Letters;

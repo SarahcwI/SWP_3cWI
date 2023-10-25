@@ -7,7 +7,14 @@ public class Decryption {
 
         for (int taker = 0; taker < convertToLetters.length; taker++) {
             char Letters = convertToLetters[taker];
-            Letters -= 2;
+            if (Letters == 98 || Letters == 66) {
+                Letters += 22;
+            }
+           else if (Letters == 97 || Letters == 65) {
+                Letters += 24;
+            }
+            else {Letters -= 2;}
+
             output[taker] = Letters;
         }
         return new String(output);
