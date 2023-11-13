@@ -2,7 +2,7 @@ package at.sarah.StringHelper;
 
 public class Main {
     public static void main(String[] args) {
-        String wordInput = "rotor";
+        String wordInput = "anna";
         boolean isPalidrom = StringHelper.isPalidrom(wordInput);
 
         if (isPalidrom){
