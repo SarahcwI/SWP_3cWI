@@ -8,16 +8,11 @@ public class StringHelper {
 
         for (int converter = 0; converter < letters.length/2; converter++) {
             int currentLetter = letters[converter];
-            //System.out.println(currentLetter + " ");
             int lastLetter =  letters[letters.length - converter - 1];
             if (currentLetter != lastLetter) {
                 System.out.println("Hallo");
                 return false;
             }
-
-
-
-
         }
         return true;
     }
