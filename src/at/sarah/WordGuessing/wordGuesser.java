@@ -14,9 +14,12 @@ public class wordGuesser {
         for (int converter = 0; converter < eachLetter.length; converter++) {
 
             output[converter] = '*';
-
         }
         System.out.println(output);
+
+        
+
+
 
     }
 }
