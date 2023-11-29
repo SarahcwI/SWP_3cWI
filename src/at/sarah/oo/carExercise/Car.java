@@ -4,12 +4,13 @@ public class Car {
     String color;
     double fuelConsumption;
     String serialNumber;
-
     double fuelAmount;
     int amountHonks;
 
+
     public void drive(){
-        this.fuelAmount = this.fuelAmount - fuelConsumption;
+
+        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
         System.out.println("I am driving");
     }
 
@@ -18,7 +19,7 @@ public class Car {
     }
 
     public void turboBoost(){
-        if (fuelAmount > fuelAmount/10) {
+        if (this.fuelAmount > this.fuelAmount/10) {
             System.out.println("SuperBoostMode");
         }
         else {
@@ -32,8 +33,12 @@ public class Car {
         }
     }
 
-   public void getRemainingRange(){
+/*Füge eine Methode getRemainingRange() ein. Diese Methode liefert die Rest-Reichweite des Autos zurück.
+Diese wird berechnet über den Tankstand und den Verbrauch.*/
 
+   public void getRemainingRange(){
+    double remainingRange = 100.0/this.fuelConsumption * this.fuelAmount ;
+       System.out.println(remainingRange);
     }
 
 }

@@ -18,14 +18,15 @@ public class Main {
         car2.amountHonks = 5;
 
 
-        System.out.println(car2.fuelAmount);
+        System.out.println("car fuel amount before: " + car2.fuelAmount);
         car2.drive();
-        System.out.println(car2.fuelAmount);
+        System.out.println("car fuel amount after: " + car2.fuelAmount);
         car2.breaking();
 
         car1.turboBoost();
         car1.honk(car1.amountHonks);
 
+        car1.getRemainingRange();
 
     }
 }
