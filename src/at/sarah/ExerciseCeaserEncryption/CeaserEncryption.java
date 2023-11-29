@@ -15,7 +15,6 @@ public class CeaserEncryption {
         String decrypted = Decryption.decryption(encrypted);
         System.out.println("Old Password " + decrypted);
 
-
     }
 }
 

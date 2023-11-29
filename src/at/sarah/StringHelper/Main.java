@@ -1,7 +1,6 @@
 package at.sarah.StringHelper;
 
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -28,9 +27,6 @@ public class Main {
 
         int countLetters = CountAmountOfLetters.printAmountOfLetters(sentenceInput);
         System.out.println(countLetters);
-
-
-
 
     }
 }
