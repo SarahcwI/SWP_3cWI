@@ -6,9 +6,9 @@ public class Car {
     public String serialNumber;
     public double fuelAmount;
     public int amountHonks;
-    public Car(int fuelConsumption, String color, String serialNumber){ //andere Vars wie oben
+    public Car(int fuelConsumption, double fuelAmount, String serialNumber){ //andere Vars wie oben
         this.fuelConsumption = fuelConsumption;
-        this.color = color;
+        this.fuelAmount = fuelAmount;
         this.serialNumber = serialNumber;
     }
 
