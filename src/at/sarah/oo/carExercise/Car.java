@@ -1,11 +1,16 @@
 package at.sarah.oo.carExercise;
 
 public class Car {
-    String color;
-    double fuelConsumption;
-    String serialNumber;
-    double fuelAmount;
-    int amountHonks;
+    public String color;
+    public double fuelConsumption;
+    public String serialNumber;
+    public double fuelAmount;
+    public int amountHonks;
+    public Car(int fuelConsumption, String color, String serialNumber){ //andere Vars wie oben
+        this.fuelConsumption = fuelConsumption;
+        this.color = color;
+        this.serialNumber = serialNumber;
+    }
 
 
     public void drive(){
@@ -36,9 +41,10 @@ public class Car {
 /*Füge eine Methode getRemainingRange() ein. Diese Methode liefert die Rest-Reichweite des Autos zurück.
 Diese wird berechnet über den Tankstand und den Verbrauch.*/
 
-   public void getRemainingRange(){
-    double remainingRange = 100.0/this.fuelConsumption * this.fuelAmount ;
-       System.out.println(remainingRange);
+   public double getRemainingRange(){
+    double remainingRange = 100.0/this.fuelConsumption * this.fuelAmount;
+       //System.out.println(remainingRange);
+       return remainingRange;
     }
 
 }
