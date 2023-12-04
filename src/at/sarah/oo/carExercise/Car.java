@@ -1,17 +1,17 @@
 package at.sarah.oo.carExercise;
 
 public class Car {
-    public String color;
-    public double fuelConsumption;
-    public String serialNumber;
-    public double fuelAmount;
-    public int amountHonks;
+    private String color;
+    private double fuelConsumption;
+    private String serialNumber;
+    private double fuelAmount;
+    private int amountHonks;
+
     public Car(int fuelConsumption, double fuelAmount, String serialNumber){ //andere Vars wie oben
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.serialNumber = serialNumber;
     }
-
 
     public void drive(){
 
@@ -47,5 +47,53 @@ Diese wird berechnet über den Tankstand und den Verbrauch.*/
        return remainingRange;
     }
 
+    public void setAmountHonks(int amountHonks) {
+        this.amountHonks = amountHonks;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setFuelAmount(double fuelAmount) {
+        if(fuelAmount>200){
+            this.fuelAmount = 100;
+        }
+        else {
+            this.fuelAmount = fuelAmount;
+        }
+    }
+
+    public void setFuelConsumption(double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public double getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public double getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public int getAmountHonks() {
+        return amountHonks;
+    }
+
+    public String getColor() {
+        return color;
+    }
 }
+
+
+
+
 
