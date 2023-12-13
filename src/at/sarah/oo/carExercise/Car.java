@@ -7,14 +7,16 @@ public class Car {
     private int amountHonks;
 
 
+
     public Car(String serialNumber, String color, Engine engine) { //andere Vars wie oben
         this.serialNumber = serialNumber;
         this.color = color;
         this.engine = engine;
+
     }
 
     public void drive() {
-
+        getEngine().getTank().getFuelConsumption();
         System.out.println("I am driving");
     }
 
@@ -30,12 +32,14 @@ Diese wird berechnet über den Tankstand und den Verbrauch.*/
 
 
     // Setter
-    public Engine getEngine() {
-        return engine;
-    }
+
 
     public void setEngine(Engine engine) {
         this.engine = engine;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 
     public void setAmountHonks(int amountHonks) {
@@ -47,12 +51,12 @@ Diese wird berechnet über den Tankstand und den Verbrauch.*/
     }
 
 
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
+    // Getter
+
+    public Engine getEngine() {
+        return engine;
     }
 
-
-    // Getter
     public String getSerialNumber() {
         return serialNumber;
     }
