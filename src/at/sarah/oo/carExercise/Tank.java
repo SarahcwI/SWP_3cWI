@@ -10,13 +10,6 @@ public class Tank {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public void turboBoost() {
-        if (this.fuelAmount > this.fuelAmount / 10) {
-            System.out.println("SuperBoostMode");
-        } else {
-            System.out.println("Not enough fuel to go to Superboost");
-        }
-    }
 
     public double getFuelConsumption() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
@@ -25,15 +18,9 @@ public class Tank {
 
     }
 
-    public void consumeFuel(){
-        this.fuelAmount -= 10;
-    }
 
-    public double getRemainingRange() {
-        double remainingRange = 100.0 / this.fuelConsumption * this.fuelAmount;
-        //System.out.println(remainingRange);
-        return remainingRange;
-    }
+
+
 
     public void setFuelAmount(double fuelAmount) {
         if (fuelAmount > 200) {
