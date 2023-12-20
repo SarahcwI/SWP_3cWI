@@ -32,21 +32,14 @@ public class Engine {
 //amount should be between 0 and 100
 
     public void drive(int amountFuel) {
+        double newAmount = this.tank.getFuelAmount() - amountFuel;
+        this.tank.setFuelAmount(newAmount);
         System.out.println("the motor is running with" + amountFuel);
     }
 
     public void breaking() {
         System.out.println("I'm breaking");
     }
-
-
-    public double FuelConsumption() {
-        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println(fuelConsumption);
-        return fuelConsumption;
-    }
-
-
 
 
     public Tank getTank() {

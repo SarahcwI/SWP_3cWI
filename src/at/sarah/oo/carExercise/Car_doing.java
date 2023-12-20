@@ -14,9 +14,9 @@ public class Car_doing {
 
         Car car1 = new Car("A1234", "red", e1);
         car1.setAmountHonks(3);
-        System.out.println(car1.getEngine().getTank().getFuelAmount());
-        car1.drive();
-        System.out.println(car1.getEngine().getTank().getFuelAmount());
+        System.out.println("out1:" + car1.getEngine().getTank().getFuelAmount());
+        car1.drive(100);
+        System.out.println("out2:" + car1.getEngine().getTank().getFuelAmount());
         Car car2 = new Car("B5678", "blue", e2);
         car2.setAmountHonks(5);
 
@@ -24,7 +24,7 @@ public class Car_doing {
         car2.setAmountHonks(5);
 
         car1.honk(car1.getAmountHonks());
-        car1.drive();
+        car1.drive(50);
 
        // car1.getEngine().getTank().getFuelConsumption();
     }

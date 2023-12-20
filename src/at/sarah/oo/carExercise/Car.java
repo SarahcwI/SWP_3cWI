@@ -14,8 +14,8 @@ public class Car {
 
     }
 
-    public void drive() {
-        getEngine().getFuelConsumption();
+    public void drive(int amount) {
+        this.engine.drive(amount);
         System.out.println("I am driving");
     }
 
