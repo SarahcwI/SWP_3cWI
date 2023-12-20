@@ -26,6 +26,6 @@ public class Car_doing {
         car1.honk(car1.getAmountHonks());
         car1.drive();
 
-        car1.getEngine().getTank().getFuelConsumption();
+       // car1.getEngine().getTank().getFuelConsumption();
     }
 }

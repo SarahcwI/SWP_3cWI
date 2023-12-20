@@ -15,7 +15,7 @@ public class Car {
     }
 
     public void drive() {
-        getEngine().getTank().getFuelConsumption();
+        getEngine().getFuelConsumption();
         System.out.println("I am driving");
     }
 

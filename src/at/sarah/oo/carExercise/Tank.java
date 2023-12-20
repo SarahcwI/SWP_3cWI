@@ -5,19 +5,12 @@ public class Tank {
     private double fuelAmount;
 
 
+
+
     public Tank(double fuelAmount, double fuelConsumption) {
         this.fuelAmount = fuelAmount;
         this.fuelConsumption = fuelConsumption;
     }
-
-
-    public double getFuelConsumption() {
-        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println(fuelConsumption);
-        return fuelConsumption;
-
-    }
-
 
 
 

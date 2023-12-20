@@ -2,17 +2,17 @@ package at.sarah.oo.carExercise;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
-
+    private TYPE typeOfFuel; //Diesel oder Benzin
     private double fuelConsumption;
     private double fuelAmount;
     private int horsePower;
-    private TYPE typeOfFuel; //Diesel oder Benzin
+
     private Tank tank;
 
-    public Engine(int horsePower, TYPE typeOfFuel, Tank tank) {
+    public Engine(int horsePower, TYPE type ,Tank tank) {
         this.horsePower = horsePower;
-        this.typeOfFuel = typeOfFuel;
         this.tank = tank;
+        this.typeOfFuel = type;
     }
 
     public void turboBoost() {
@@ -29,12 +29,6 @@ public class Engine {
         return remainingRange;
     }
 
-    public void consumeFuel(){
-        this.fuelAmount -= 10;
-    }
-
-
-
 //amount should be between 0 and 100
 
     public void drive(int amountFuel) {
@@ -44,6 +38,15 @@ public class Engine {
     public void breaking() {
         System.out.println("I'm breaking");
     }
+
+
+    public double FuelConsumption() {
+        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
+        System.out.println(fuelConsumption);
+        return fuelConsumption;
+    }
+
+
 
 
     public Tank getTank() {
