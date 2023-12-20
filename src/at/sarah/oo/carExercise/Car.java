@@ -7,10 +7,11 @@ public class Car {
     private int amountHonks;
 
 
-    public Car(String serialNumber, String color, Engine engine) { //andere Vars wie oben
+    public Car(String serialNumber, String color, Engine engine, int amountHonks) { //andere Vars wie oben
         this.serialNumber = serialNumber;
         this.color = color;
         this.engine = engine;
+        this.amountHonks = amountHonks;
 
     }
 
@@ -20,8 +21,8 @@ public class Car {
     }
 
 
-    public void honk(int amountOfRepetitions) {
-        for (int counter = 0; counter < amountOfRepetitions; counter++) {
+    public void honk() {
+        for (int counter = 0; counter < getAmountHonks(); counter++) {
             System.out.println("Tuuuuut meine horsepower ist " + this.getEngine().getHorsePower());
         }
     }

@@ -12,20 +12,23 @@ public class Car_doing {
         Engine e3 = new Engine(300, Engine.TYPE.DIESEL, t3);
 
 
-        Car car1 = new Car("A1234", "red", e1);
-        car1.setAmountHonks(3);
-        System.out.println("out1:" + car1.getEngine().getTank().getFuelAmount());
+     //Car 1
+        Car car1 = new Car("A1234", "red", e1, 3);
+                System.out.println("out1:" + car1.getEngine().getTank().getFuelAmount());
         car1.drive(100);
         System.out.println("out2:" + car1.getEngine().getTank().getFuelAmount());
-        Car car2 = new Car("B5678", "blue", e2);
-        car2.setAmountHonks(5);
 
-        Car car3 = new Car("C91011", "white", e3);
-        car2.setAmountHonks(5);
 
-        car1.honk(car1.getAmountHonks());
+     //Car 2
+        Car car2 = new Car("B5678", "blue", e2, 5);
+        car2.honk();
+
+     // Car 3
+        Car car3 = new Car("C91011", "white", e3, 2);
+        car3.honk();
+
+
         car1.drive(50);
 
-       // car1.getEngine().getTank().getFuelConsumption();
     }
 }
