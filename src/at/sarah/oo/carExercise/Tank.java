@@ -11,9 +11,9 @@ public class Tank {
     }
 
 
-    public void setFuelAmount(double fuelAmount) {
-
+    public double setFuelAmount(double fuelAmount) {
         this.fuelAmount = fuelAmount;
+        return fuelAmount;
 
     }
 

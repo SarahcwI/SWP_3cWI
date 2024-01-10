@@ -1,8 +1,7 @@
 package at.sarah.oo.carExercise;
 
-public class Car_doing {
+public class Car_execute {
     public static void main(String[] args) {
-
         Tank t1 = new Tank(800, 7);
         Tank t2 = new Tank(40, 8);
         Tank t3 = new Tank(120, 17);
