@@ -2,6 +2,7 @@ package at.sarah.oo.carExercise;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
+
     private TYPE typeOfFuel; //Diesel oder Benzin
     private int horsePower;
     private Tank tank;
@@ -28,9 +29,6 @@ public class Engine {
         double newAmount = this.tank.getFuelAmount() - amountFuel;
         this.tank.setFuelAmount(newAmount);
         System.out.println("the motor is running with" + newAmount);
-
-
-
         return newAmount;
     }
 
@@ -62,7 +60,6 @@ public class Engine {
     public TYPE getTypeOfFuel() {
         return typeOfFuel;
     }
-
 
 }
 

@@ -1,18 +1,19 @@
 package at.sarah.oo.carExercise;
+import java.util.List;
 
 public class Car {
     private Engine engine;
     private String color;
     private String serialNumber;
     private int amountHonks;
+    private List<RearMirror> mirrors;
 
 
-    public Car(String serialNumber, String color, Engine engine, int amountHonks) { //andere Vars wie oben
+    public Car(String serialNumber, String color, Engine engine, int amountHonks ) { //andere Vars wie oben
         this.serialNumber = serialNumber;
         this.color = color;
         this.engine = engine;
         this.amountHonks = amountHonks;
-
     }
 
     public void drive(double amount, double speed) {
