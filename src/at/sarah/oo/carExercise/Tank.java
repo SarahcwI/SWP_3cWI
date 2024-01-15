@@ -14,12 +14,13 @@ public class Tank {
     public double setFuelAmount(double fuelAmount) {
         this.fuelAmount = fuelAmount;
         return fuelAmount;
-
     }
+
 
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
+
 
     public double getFuelAmount() {
         return fuelAmount;

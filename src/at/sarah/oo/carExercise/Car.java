@@ -15,9 +15,17 @@ public class Car {
 
     }
 
-    public void drive(int amount) {
+    public void drive(double amount, double speed) {
         this.engine.drive(amount);
-        System.out.println("I am driving");
+
+        if (speed == 100) {
+            System.out.println("I am driving with full speed. Speed " + speed);
+        }
+        if (speed <= 1) {
+            System.out.println("I am driving very slowly. Speed:" + speed);
+        } else {
+            System.out.println("I am simply driving with a speed of  " + speed);
+        }
     }
 
 

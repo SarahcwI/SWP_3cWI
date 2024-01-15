@@ -2,11 +2,10 @@ package at.sarah.oo.carExercise;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
-
     private TYPE typeOfFuel; //Diesel oder Benzin
     private int horsePower;
-
     private Tank tank;
+
 
     public Engine(int horsePower, TYPE type, Tank tank) {
         this.horsePower = horsePower;
@@ -15,13 +14,12 @@ public class Engine {
     }
 
     public void turboBoost() {
-        if (this.tank.getFuelAmount()> this.tank.getFuelAmount() / 10) {
+        if (this.tank.getFuelAmount() > this.tank.getFuelAmount() / 10) {
             System.out.println("SuperBoostMode");
         } else {
             System.out.println("Not enough fuel to go to Superboost");
         }
     }
-
 
 
 //amount should be between 0 and 100
@@ -30,6 +28,9 @@ public class Engine {
         double newAmount = this.tank.getFuelAmount() - amountFuel;
         this.tank.setFuelAmount(newAmount);
         System.out.println("the motor is running with" + newAmount);
+
+
+
         return newAmount;
     }
 

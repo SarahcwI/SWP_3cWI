@@ -11,23 +11,23 @@ public class Car_execute {
         Engine e3 = new Engine(300, Engine.TYPE.DIESEL, t3);
 
 
-     //Car 1
-        Car car1 = new Car("A1234", "red", e1, 3);
-                System.out.println("out1:" + car1.getEngine().getTank().getFuelAmount());
-        car1.drive(100);
+        //Car 1
+        Car car1 = new Car("A1234", "red", e1, 1);
+
+        System.out.println("out1:" + car1.getEngine().getTank().getFuelAmount());
+        car1.drive(100, 15);
         System.out.println("out2:" + car1.getEngine().getTank().getFuelAmount());
+        car1.getEngine().turboBoost();
 
 
-     //Car 2
-        Car car2 = new Car("B5678", "blue", e2, 5);
+        //Car 2
+        Car car2 = new Car("B5678", "blue", e2, 1);
         car2.honk();
 
-     // Car 3
+        // Car 3
         Car car3 = new Car("C91011", "white", e3, 2);
         car3.honk();
 
-
-        car1.drive(50);
 
     }
 }
