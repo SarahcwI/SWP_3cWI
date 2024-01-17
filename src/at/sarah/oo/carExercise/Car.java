@@ -1,4 +1,5 @@
 package at.sarah.oo.carExercise;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
@@ -14,6 +15,16 @@ public class Car {
         this.color = color;
         this.engine = engine;
         this.amountHonks = amountHonks;
+        this.mirrors = new ArrayList<>();
+    }
+
+
+    public void addMirror (RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
     }
 
     public void drive(double amount, double speed) {
@@ -23,7 +34,7 @@ public class Car {
             System.out.println("I am driving with full speed. Speed " + speed);
         }
         if (speed <= 1) {
-            System.out.println("I am driving very slowly. Speed:" + speed);
+            System.out.println("I am driving very slowly. Speed: " + speed);
         } else {
             System.out.println("I am simply driving with a speed of  " + speed);
         }
