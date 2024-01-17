@@ -8,6 +8,7 @@ public class Car {
     private String serialNumber;
     private int amountHonks;
     private List<RearMirror> mirrors;
+    private List<Wheels> wheels;
 
 
     public Car(String serialNumber, String color, Engine engine, int amountHonks ) { //andere Vars wie oben
@@ -16,6 +17,7 @@ public class Car {
         this.engine = engine;
         this.amountHonks = amountHonks;
         this.mirrors = new ArrayList<>();
+        this.wheels = new ArrayList<>();
     }
 
 
@@ -25,6 +27,14 @@ public class Car {
 
     public List<RearMirror> getMirrors() {
         return mirrors;
+    }
+
+    public void addWheel (Wheels wheels){
+        this.wheels.add(wheels);
+    }
+
+    public List<Wheels> getWheels(){
+        return wheels;
     }
 
     public void drive(double amount, double speed) {
