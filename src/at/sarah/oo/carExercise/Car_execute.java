@@ -14,8 +14,8 @@ public class Car_execute {
         RearMirror r2 = new RearMirror(90, 2);
 
         Wheels w1 = new Wheels(Wheels.TYPE.Winter, 100, 50);
-        Wheels w2 = new Wheels(Wheels.TYPE.Summer, 200, 50);
-        Wheels w3 = new Wheels(Wheels.TYPE.Winter, 100, 100);
+        Wheels w2 = new Wheels(Wheels.TYPE.Summer, 200, 90);
+        Wheels w3 = new Wheels(Wheels.TYPE.Winter, 100, 180);
         Wheels w4 = new Wheels(Wheels.TYPE.Winter, 200, 100);
 
 

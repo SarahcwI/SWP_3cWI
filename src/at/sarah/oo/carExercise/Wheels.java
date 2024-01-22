@@ -11,6 +11,7 @@ public class Wheels {
         this.position = position;
     }
 
+
     public TYPE getTypeOfWheels() {
         return TypeOfWheels;
     }

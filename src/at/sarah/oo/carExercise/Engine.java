@@ -2,7 +2,6 @@ package at.sarah.oo.carExercise;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
-
     private TYPE typeOfFuel; //Diesel oder Benzin
     private int horsePower;
     private Tank tank;
