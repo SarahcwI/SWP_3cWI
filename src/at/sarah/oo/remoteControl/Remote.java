@@ -1,2 +1,4 @@
-package at.sarah.oo.remoteControl;public class Remote {
+package at.sarah.oo.remoteControl;
+
+public class Remote {
 }

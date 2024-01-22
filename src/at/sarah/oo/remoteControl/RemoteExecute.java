@@ -1,2 +1,4 @@
-package at.sarah.oo.remoteControl;public class RemoteExecute {
+package at.sarah.oo.remoteControl;
+
+public class RemoteExecute {
 }

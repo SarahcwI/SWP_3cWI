@@ -1,2 +1,4 @@
-package at.sarah.oo.remoteControl;public class Battery {
+package at.sarah.oo.remoteControl;
+
+public class Battery {
 }
