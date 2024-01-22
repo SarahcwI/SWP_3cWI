@@ -15,7 +15,6 @@ public class Battery {
         this.statusOFBattery = statusOFBattery;
     }
 
-
     public TYPE2 getStatusOFBattery() {
         return statusOFBattery;
     }
