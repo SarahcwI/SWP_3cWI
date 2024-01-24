@@ -1,38 +1,30 @@
 package at.sarah.oo.remoteControl;
-
-import at.sarah.oo.carExercise.RearMirror;
-import at.sarah.oo.carExercise.Wheels;
-import at.sarah.oo.remoteControl.Battery;
-
 import java.util.ArrayList;
 import java.util.List;
+import at.sarah.oo.remoteControl.Battery;
 
 public class Remote {
-
-
     private String colorOfRemote;
     private int amountButtons;
-
     private List<Battery> battery;
 
 
-    public Remote(Battery battery, String colorOfRemote, int amountButtons) {
-        this.battery = new ArrayList<>();
+    public Remote(String colorOfRemote, int amountButtons) {
         this.colorOfRemote = colorOfRemote;
         this.amountButtons = amountButtons;
+        this.battery = new ArrayList<>();
     }
 
 
-    public void addBattery (Battery battery){
+
+
+
+    public void addBattery(Battery battery) {
         this.battery.add(battery);
     }
 
     public List<Battery> getBattery() {
         return battery;
-    }
-
-    public void setBattery(List<Battery> battery) {
-        this.battery = battery;
     }
 
     public String getColorOfRemote() {
