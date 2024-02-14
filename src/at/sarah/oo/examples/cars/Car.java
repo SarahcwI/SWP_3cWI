@@ -6,15 +6,14 @@ public class Car {
     private int base_price;
     private int distance;
     private Engine engine;
-    private Manufacturer manufacturer;
 
-    public Car(String color, int max_speed, int base_price, int distance, Engine engine, Manufacturer manufacturer) {
+    public Car(String color, int max_speed, int base_price, int distance, Engine engine) {
         this.color = color;
         this.max_speed = max_speed;
         this.base_price = base_price;
         this.distance = distance;
         this.engine = engine;
-        this.manufacturer = manufacturer;
+
     }
 
     public String getColor() {
@@ -57,11 +56,5 @@ public class Car {
         this.engine = engine;
     }
 
-    public Manufacturer getManufacturer() {
-        return manufacturer;
-    }
 
-    public void setManufacturer(Manufacturer manufacturer) {
-        this.manufacturer = manufacturer;
-    }
 }

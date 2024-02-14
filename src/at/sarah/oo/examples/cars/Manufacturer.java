@@ -4,11 +4,19 @@ public class Manufacturer {
     private String nameOfManufacturer;
     private String countryOfOrigin;
     private int discount;
+    private Car car;
 
-    public Manufacturer(String nameOfManufacturer, String countryOfOrigin, int discount) {
+    public Manufacturer(String nameOfManufacturer, String countryOfOrigin, int discount, Car car) {
         this.nameOfManufacturer = nameOfManufacturer;
         this.countryOfOrigin = countryOfOrigin;
         this.discount = discount;
+        this.car = car;
+    }
+
+    public void discountedPrice(){
+        int discountInEuro = car.getBase_price() * this.discount /100;
+        int newPrice = car.getBase_price() - discountInEuro;
+        System.out.println("The discounted price is " + newPrice + "euros");
     }
 
     public String getNameOfManufacturer() {
@@ -28,7 +36,8 @@ public class Manufacturer {
     }
 
     public int getDiscount() {
-        return discount;
+        System.out.println("This Manufacturer has a Discount of " + this.discount + " %");
+        return this.discount;
     }
 
     public void setDiscount(int discount) {
