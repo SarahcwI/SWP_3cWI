@@ -6,13 +6,14 @@ public class Engine {
     public enum TYPE {DIESEL, GAS}
     private TYPE typeOfFuel; //Diesel oder Benzin
     private int power;
-    private int base_consumption;
+    private double base_consumption;
 
     public Engine(TYPE typeOfFuel, int power, int base_consumption) {
         this.typeOfFuel = typeOfFuel;
         this.power = power;
         this.base_consumption = base_consumption;
     }
+
 
     public TYPE getTypeOfFuel() {
         return typeOfFuel;
@@ -30,7 +31,7 @@ public class Engine {
         this.power = power;
     }
 
-    public int getBase_consumption() {
+    public double getBase_consumption() {
         return base_consumption;
     }
 

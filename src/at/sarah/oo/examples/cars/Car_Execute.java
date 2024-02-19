@@ -6,12 +6,16 @@ public class Car_Execute {
         Engine engine1 = new Engine(Engine.TYPE.DIESEL, 34, 4);
 
 
+        Manufacturer manufacturer1 = new Manufacturer("BMW", "Germany", 4);
 
-        Car car1 = new Car("red", 45, 45000, 56, engine1);
-        Manufacturer manufacturer1 = new Manufacturer("BMW", "Germany", 4, car1);
+
+        Car car1 = new Car("red", 45, 45000, 500000, engine1, manufacturer1);
 
         System.out.println(car1.getEngine().getTypeOfFuel());
 
+        car1.discountedPrice();
+
+        car1.fuelConsumtion();
 
     }
 }
