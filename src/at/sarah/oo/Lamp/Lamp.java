@@ -28,8 +28,14 @@ public class Lamp {
         for (int counter = 0; counter < glowElements.size(); counter++) {
             overallUsage += this.glowElements.get(counter).getCurrentUsage();
         }
-
         return overallUsage;
+    }
+
+    public void printNamesOfLightElements(){
+        for (int counter = 0; counter < glowElements.size(); counter++) {
+           String nameOfGlowelement = this.glowElements.get(counter).getName();
+            System.out.println(nameOfGlowelement);
+        }
     }
     
     public List<Glowelement> getGlowElements() {

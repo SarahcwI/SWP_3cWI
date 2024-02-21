@@ -16,5 +16,6 @@ public class main {
         lamp.turnAllOn();
         System.out.println(lamp.getOverallPowerUsage());
 
+        lamp.printNamesOfLightElements();
     }
 }
