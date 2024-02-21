@@ -16,6 +16,13 @@ public class Lamp {
         this.glowElements.add(glowelement);
     }
 
+    public void turnAllOn(){
+        System.out.println("...Turning all on...");
+        for (int counter = 0; counter < glowElements.size(); counter++) {
+            this.glowElements.get(counter).turnOn();
+        }
+    }
+    
     public List<Glowelement> getGlowElements() {
         return glowElements;
     }

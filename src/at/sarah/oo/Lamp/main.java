@@ -11,6 +11,8 @@ public class main {
         lamp.addGlowElement(g2);
 
 
-        lamp.getGlowElements().get(0).turnOn();
+        //lamp.getGlowElements().get(0).turnOn();
+
+        lamp.turnAllOn();
     }
 }
