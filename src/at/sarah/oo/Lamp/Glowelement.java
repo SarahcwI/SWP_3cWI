@@ -16,6 +16,20 @@ public class Glowelement {
         this.status = status;
     }
 
+
+    public void turnOn(){
+        if (getStatus() == type.off){
+            setStatus(type.on);
+            setCurrentUsage(this.currentUsage + 5);
+            System.out.println("My new currentUsage is " + this.currentUsage);
+        }
+
+        else{
+            System.out.println("Mein Name ist " + getName() + ". Ich bin bereits eingeschaltet. uwu ");
+        }
+    }
+
+
     public String getName() {
         return name;
     }
