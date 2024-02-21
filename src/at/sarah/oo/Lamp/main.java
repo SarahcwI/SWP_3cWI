@@ -14,5 +14,7 @@ public class main {
         //lamp.getGlowElements().get(0).turnOn();
 
         lamp.turnAllOn();
+        System.out.println(lamp.getOverallPowerUsage());
+
     }
 }

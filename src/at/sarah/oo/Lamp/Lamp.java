@@ -22,6 +22,15 @@ public class Lamp {
             this.glowElements.get(counter).turnOn();
         }
     }
+
+    public double getOverallPowerUsage(){
+        double overallUsage = 0;
+        for (int counter = 0; counter < glowElements.size(); counter++) {
+            overallUsage += this.glowElements.get(counter).getCurrentUsage();
+        }
+
+        return overallUsage;
+    }
     
     public List<Glowelement> getGlowElements() {
         return glowElements;
