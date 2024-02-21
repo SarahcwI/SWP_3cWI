@@ -6,9 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lamp {
-    private List<Glowelement> glowelements;
+    private List<Glowelement> glowElements;
 
     public Lamp() {
-        this.glowelements = new ArrayList<>();
+        this.glowElements = new ArrayList<>();
+    }
+
+    public void addGlowElement(Glowelement glowelement){
+        this.glowElements.add(glowelement);
+    }
+
+    public List<Glowelement> getGlowElements() {
+        return glowElements;
+    }
+
+    public void setGlowElements(List<Glowelement> glowElements) {
+        this.glowElements = glowElements;
     }
 }

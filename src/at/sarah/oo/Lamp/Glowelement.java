@@ -6,7 +6,7 @@ public class Glowelement {
     private String name;
     private String color;
     private double currentUsage;
-    private enum type {on,off}
+    public enum type {on,off}
     private Glowelement.type status; //ein oder aus
 
     public Glowelement(String name, String color, double currentUsage, type status) {
