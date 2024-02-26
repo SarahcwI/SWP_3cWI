@@ -39,5 +39,10 @@ public class Car_execute {
         //System.out.println("After it was " + car1.getEngine().getTank().getFuelAmount());
         System.out.println(car1.getWheels().get(2).getSize());
         System.out.println(car1.getWheels().get(1).getSize());
+
+        Truck tr1 = new Truck("A1234", "red", e1, 0, "Trailer 1");
+
+        System.out.println(tr1.getColor() + tr1.getTrailer());
+
     }
 }
