@@ -44,5 +44,9 @@ public class Car_execute {
 
         System.out.println(tr1.getColor() + tr1.getTrailer());
 
+        tr1.drive(4,6);
+
+        tr1.stop();
+
     }
 }

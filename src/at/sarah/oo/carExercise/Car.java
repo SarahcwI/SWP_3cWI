@@ -38,6 +38,10 @@ public class Car {
         return wheels;
     }
 
+
+    public void stop(){
+        System.out.println("Brekaing down");
+    }
     public void drive(double amount, double speed) {
         this.engine.drive(amount);
 
