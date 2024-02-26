@@ -19,6 +19,8 @@ public class main {
         System.out.println(sc1.sin(50));
         //sc1 cos
         System.out.println(sc1.cos(50));
+        //sc1 add
+        System.out.println(sc1.add(4,5));
 
 
 
