@@ -33,5 +33,9 @@ public class Palidrom {
     public static void countLetters (char Letters){
         //System.out.println(convertToLetters.length);
 
+
+
     }
+    
+    
 }
