@@ -1,6 +1,7 @@
 package at.sarah.oo.GeometricFigures;
 
 public class Square extends Figures{
+
     private double a;
 
     public Square(String name, double a) {
@@ -9,17 +10,8 @@ public class Square extends Figures{
     }
 
 
-     if(getName().equalsIgnoreCase("square")){
-        calculateArea = Math.pow(square.getA(), 2);
-        return calculateArea;
-    }
-
-
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
+    @Override
+    public double getArea() {
+        return Math.pow(a, 2);
     }
 }

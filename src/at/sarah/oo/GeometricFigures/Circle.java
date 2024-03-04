@@ -13,16 +13,8 @@ public class Circle extends Figures{
 
     @Override
     public double getArea() {
-
-
-        return super.getArea();
+        return Math.PI * Math.pow(r,2);
     }
 
-    public double getR() {
-        return r;
-    }
 
-    public void setR(double r) {
-        this.r = r;
-    }
 }
