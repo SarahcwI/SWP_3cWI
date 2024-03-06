@@ -11,7 +11,7 @@ public class PhoneFile {
         this.sizeInMB = sizeInMB;
     }
 
-    public String getAllInfo (){
+    public String getAllInfo() {
         return name + "." + extension + " " + sizeInMB + "MB";
     }
 
