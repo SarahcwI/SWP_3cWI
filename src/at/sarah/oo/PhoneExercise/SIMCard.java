@@ -15,8 +15,8 @@ public class SIMCard {
     }
 
 
-    public String doCall(){
-        return "dialing number ...";
+    public String doCall(String callingNumber){
+        return "dialing number ..." + callingNumber;
     }
 
 

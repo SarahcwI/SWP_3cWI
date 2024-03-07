@@ -9,17 +9,26 @@ public class main {
 
 
         SDCard sdCard = new SDCard(40);
+        Camera camera = new Camera("700x788", sdCard);
+        Phone phone = new Phone("red", camera, sdCard, simCard);
 
-        System.out.println(file1.getAllInfo());
 
         sdCard.safeFile(file1);
         sdCard.safeFile(file2);
 
         sdCard.getAllFiles();
+        System.out.println(phone.getFreeSpace());
+        phone.takePicture();
+        System.out.println("uwu");
+        System.out.println(phone.getFreeSpace());
 
-        System.out.println(sdCard.getFreeSpace());
+        phone.printAllFiles();
 
-        System.out.println(simCard.getSimInfo());
-        System.out.println(simCard.doCall());
+        phone.makeCall("9669405868");
+
+
+
+
+
     }
 }
