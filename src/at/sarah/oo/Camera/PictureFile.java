@@ -8,9 +8,9 @@ public class PictureFile {
 
     private String name;
     private String date;
-    private String sizeInMB;
+    private int sizeInMB;
 
-    public PictureFile(String name, String date, String sizeInMB) {
+    public PictureFile(String name, String date, int sizeInMB) {
         this.name = name;
         this.date = date;
         this.sizeInMB = sizeInMB;
@@ -28,7 +28,7 @@ public class PictureFile {
         return date;
     }
 
-    public String getSizeInMB() {
+    public int getSizeInMB() {
         return sizeInMB;
     }
 }
