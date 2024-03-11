@@ -12,6 +12,7 @@ public class Camera {
     private PictureFile pictureFile;
 
 
+
     public Camera(int pixel, int weightInKg, String colour, TYPE resolutionOfPicture) {
         this.pixel = pixel;
         this.weightInKg = weightInKg;
@@ -40,7 +41,15 @@ public class Camera {
         }
 
 
+        if (sdCards.size()==0){
+            System.out.println("Leider keine SD Karte eingelegt");
+            return;
+        }
 
+        int sumOfAllFreeSpace = 0;
+        for (SDCard card: this.sdCards ) {
+            sumOfAllFreeSpace += card.getFreeSpace();
+        }
 
         if (sdCards.get(0).getFreeSpace() > 3000){
             System.out.println("WARNING Capacity almost reached");
