@@ -23,6 +23,11 @@ public class SDCard {
         return capacity - sum;
     }
 
+
+    public ArrayList<PictureFile> getPictureFiles() {
+        return pictureFiles;
+    }
+
     public int getCapacity() {
         return capacity;
     }

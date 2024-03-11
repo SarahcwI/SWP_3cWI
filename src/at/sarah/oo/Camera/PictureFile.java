@@ -3,8 +3,6 @@ package at.sarah.oo.Camera;
 import at.sarah.oo.examples.cars.Engine;
 
 public class PictureFile {
-    private enum TYPE {small, medium , large}
-    private PictureFile.TYPE resolution;
 
     private String name;
     private String date;
@@ -30,5 +28,9 @@ public class PictureFile {
 
     public int getSizeInMB() {
         return sizeInMB;
+    }
+
+    public void setSizeInMB(int sizeInMB) {
+        this.sizeInMB = sizeInMB;
     }
 }
